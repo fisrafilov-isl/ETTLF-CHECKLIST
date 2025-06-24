@@ -1,0 +1,432 @@
+Here is a detailed extraction of the data from the provided screenshots, organized for clarity and to help you identify items for your new TLF and E&T programme checklists.
+Key Observations for Your Project
+
+    Reusability is High: Most document submission items (passports, birth certificates, medical forms) are triggered by broad conditions like application status or enrollment year. These can likely be reused for your new programmes without modification.
+
+    Critical IB Tracks Field: The system uses a field called IB Tracks to differentiate between programmes. You will see conditions like IB Tracks Does not equal IB: Technology Leaders Sch or IB Tracks Does not equal IB: Entrepreneurship & Technology. This is the key field you will need to use to make checklist items appear only for your new programmes.
+
+    Dependencies are Common: Many items only appear after a previous item is completed (e.g., Completed Checklist contains Receive Decision from Admission Team). This creates a logical workflow for parents.
+
+    OR Groups for Different Cohorts: The logic often uses OR to group conditions for different cohorts, such as new applicants for 2024-2025, new applicants for 2025-2026, or re-enrolling students (REE 2025-2026).
+
+Extracted Checklist Item Details
+
+Here is the item-by-item breakdown:
+
+1. Submit Registration of Interest
+
+    Item Name: Submit Registration of Interest
+
+    Item Type: Form
+
+    Statuses: Pending, Admitted, Place offered, Wait-listed, Declined, Enrolled
+
+    Conditions:
+
+        (HS Students 20... Does not equal Yes) AND (REE 2025-2026 Does not equal Yes)
+
+    Description: (None)
+
+    Form: Registration of Interest
+
+2. Submit Unaccompanied Dismissal Permission (Optional)
+
+    Item Name: Submit Unaccompanied Dismissal Permission (Optional)
+
+    Item Type: Form
+
+    Optional: Yes
+
+    Statuses: Admitted, Place offered, Enrolled
+
+    Conditions:
+
+        (Dependency: Completed Submit Enrolment Form...) OR
+
+        (HS Students 20... Equals Yes) OR
+
+        (Enrollment Year Equals 2023-2024 Academic Year)
+
+    Description: Submit this form if you would like your child to be allowed to leave school at designated time without parental supervision.
+
+    Form: Unaccompanied Dismissal Permission Form (MYP)
+
+3. Submit the School Bus: Walk Alone Consent Form (2024-2025) (Optional)
+
+    Item Name: Submit the School Bus: Walk Alone Consent Form (2024-2025) (Optional)
+
+    Item Type: Form
+
+    Optional: Yes
+
+    Statuses: Admitted, Place offered, Enrolled
+
+    Conditions: (Same as #2)
+
+    Description: (None)
+
+    Form: School Bus: Walk Alone Consent Form
+
+4. Submit Field Trip Authorisation Form (2024-2025)
+
+    Item Name: Submit Field Trip Authorisation Form (2024-2025)
+
+    Item Type: Form
+
+    Statuses: Admitted, Place offered, Enrolled
+
+    Conditions: (Same as #2)
+
+    Description: (None)
+
+    Form: Field Trip Authorisation Form (2024-2025)
+
+5. Receive Onboarding Email + First Day Date
+
+    Item Name: Receive Onboarding Email + First Day Date
+
+    Item Type: To Do
+
+    Statuses: Admitted, Place offered, Enrolled
+
+    Conditions:
+
+        (Dependency: Completed Submit Enrolment Form...) OR
+
+        (Dependency: Completed Submit Enrolment Form...) (Note: Two identical groups)
+
+    Description: (None)
+
+    Other: Allow parents to mark as completed is checked.
+
+6. Receive Invoice from Accounting Team
+
+    Item Name: Receive Invoice from Accounting Team
+
+    Item Type: To Do
+
+    Statuses: Admitted, Place offered, Enrolled
+
+    Conditions:
+
+        (Dependency: Completed Receive Decision from Admission Team) OR
+
+        (Enrollment Year Equals 2023-2024 Academic Year) OR
+
+        (HS Students 20... Equals Yes) OR
+
+        (REE 2025-2026 Equals Yes)
+
+    Description: (None)
+
+    Other: Allow parents to mark as completed is checked.
+
+7. Submit Student's Photo
+
+    Item Name: Submit Student's Photo
+
+    Item Type: Document Submission
+
+    Data Categories: General, Academic
+
+    Statuses: Admitted, Place offered, Enrolled
+
+    Conditions:
+
+        (Dependency: Completed Receive Decision from Admission Team) OR
+
+        (HS Students 20... Equals Yes) OR
+
+        (Enrollment Year Equals 2023-2024 Academic Year) OR
+
+        (REE 2025-2026 Equals Yes) AND (REE Missing Checklist Contains Submit Student's Photo)
+
+    Description: Please upload a portrait photo of your child. Please ensure that the file is in PNG, JPEG or GIF format, with dimensions no less than 300x300 px.
+
+    File Requirements: PNG, JPEG, GIF; min 300x300px.
+
+8. Submit Medical Report
+
+    Item Name: Submit Medical Report
+
+    Item Type: Document Submission
+
+    Data Categories: General, Medical
+
+    Statuses: Admitted, Place offered, Enrolled
+
+    Conditions:
+
+        (Dependency: Completed Receive Decision... AND Special Educational... Equals Yes) OR
+
+        (HS Students 20... Equals Yes AND Special Educational... Equals Yes) OR
+
+        (Enrollment Year Equals 2023-2024 Academic Year AND Special Educational... Equals Yes) OR
+
+        (REE 2025-2026 Equals Yes AND REE Missing Checklist Contains Submit Medical Report AND Special Educational... Equals Yes)
+
+    Description: Please submit a medical report to confirm your child's Special Educational Needs.
+
+9. Submit Vaccination Coverage Certificate or Vaccination Refusal
+
+    Item Name: Submit Vaccination Coverage Certificate or Vaccination Refusal
+
+    Item Type: Document Submission
+
+    Data Categories: General, Medical
+
+    Statuses: Admitted, Place offered, Enrolled
+
+    Conditions: (Same structure as #7, checks for "Submit Vaccination Cover...")
+
+    Description: Please upload the vaccination certificate, or download <a href="https://drive.google.com/file/d/16P4Z10j-sawY-yGhtnGQ7EUbMHFtasjF/view?usp=sharing" target="_blank" rel="noopener noreferrer">the local vaccination certificate</a> and have it signed by your doctor.
+
+10. Submit Child's Health Certificate
+
+    Item Name: Submit Child's Health Certificate
+
+    Item Type: Document Submission
+
+    Data Categories: General, Medical
+
+    Statuses: Pending, Admitted, Place offered, Enrolled
+
+    Conditions: (Same structure as #7, checks for "Submit Child's Health Cert")
+
+    Description: The doctor's note confirming that the child is allowed to attend the school. (A note from local pediatrician, in Greek or English language.)
+
+11. Submit Proof of Residence
+
+    Item Name: Submit Proof of Residence
+
+    Item Type: Document Submission
+
+    Data Categories: General
+
+    Statuses: Pending, Admitted, Place offered, Enrolled
+
+    Conditions: (Same structure as #7, checks for "Submit Proof of Residence")
+
+    Description: (Rental agreement or any utility bill.)
+
+12. Submit Parents'/Guardians' Passports or ID Cards
+
+    Item Name: Submit Parents'/Guardians' Passports or ID Cards
+
+    Item Type: Document Submission
+
+    Data Categories: General, Legal
+
+    Statuses: Pending, Admitted, Place offered, Enrolled
+
+    Conditions: (Same structure as #7, checks for "Submit Parents'/Guardian...")
+
+    Description: Please ensure that all required documents for each parent or guardian of the applicant are uploaded. <b>Only a Passport or ID Card is accepted for this submission; a residence permit will not be accepted as a substitute.</b>
+
+13. Submit Child's Passport or ID Card
+
+    Item Name: Submit Child's Passport or ID Card
+
+    Item Type: Document Submission
+
+    Data Categories: General, Legal, Medical
+
+    Statuses: Pending, Admitted, Place offered, Enrolled
+
+    Conditions: (Same structure as #7, checks for "Submit Child's Passport or...")
+
+    Description: For non-Cypriot citizens - Passport only, for Cypriot citizens - Passport or ID Card. <b>A residence permit is not accepted as a substitute.</b>
+
+14. Submit Child's Birth Certificate
+
+    Item Name: Submit Child's Birth Certificate
+
+    Item Type: Document Submission
+
+    Data Categories: General, Legal, Medical
+
+    Statuses: Pending, Admitted, Place offered, Enrolled
+
+    Conditions: (Same structure as #7, checks for "Submit Child's Birth Certifi")
+
+    Description: (None)
+
+15. School Received E-Signature for 2025-2026 Enrolment / Re-Enrolment
+
+    Item Name: School Received E-Signature for 2025-2026 Enrolment / Re-Enrolment
+
+    Item Type: To Do
+
+    Statuses: Pending, Admitted, Place offered, Enrolled
+
+    Conditions:
+
+        (Dependency: Completed Submit Enrolment Form...) OR (REE 2025-2026 Equals Yes)
+
+    Description: (None)
+
+    Other: Allow parents to mark as completed is checked.
+
+16. E-Sign Your Enrolment / Re-Enrolment Form 2025-2026
+
+    Item Name: E-Sign Your Enrolment / Re-Enrolment Form 2025-2026
+
+    Item Type: To Do
+
+    Statuses: Pending, Admitted, Place offered, Enrolled
+
+    Conditions: (Same as #15)
+
+    Description: Please wait for an email from the Admission Team with a contract to sign.
+
+    Other: Allow parents to mark as completed is checked.
+
+17. School Received E-Signature for 2024-2025 Enrolment / Re-Enrolment
+
+    Item Name: School Received E-Signature for 2024-2025 Enrolment / Re-Enrolment
+
+    Item Type: To Do
+
+    Statuses: Admitted, Place offered, Enrolled
+
+    Conditions:
+
+        (Dependency: Completed Submit Enrolment Form...) OR
+
+        (Enrollment Year Equals 2023-2024 Academic Year) OR
+
+        (HS Students 20... Equals Yes)
+
+    Description: Please wait until the Admission Team confirms your payment.
+
+    Other: Allow parents to mark as completed is not checked.
+
+18. E-Sign Your Enrolment / Re-Enrolment Form 2024-2025
+
+    Item Name: E-Sign Your Enrolment / Re-Enrolment Form 2024-2025
+
+    Item Type: To Do
+
+    Statuses: Pending, Admitted, Place offered, Enrolled
+
+    Conditions: (Same as #17, but with groups in a different order)
+
+    Description: Please wait for an email from the Admission Team with a contract to sign.
+
+    Other: Allow parents to mark as completed is checked.
+
+19. Submit Enrolment Form for Academic Year 2025-2026
+
+    Item Name: Submit Enrolment Form for Academic Year 2025-2026
+
+    Item Type: Form
+
+    Statuses: Pending, Admitted, Place offered, Enrolled
+
+    Conditions:
+
+        (Dependency: Completed Receive Decision...) AND (Enrollment Year Equals 2025-2026 Academic Year) AND (IB Tracks Does not equal IB: Technology Leaders Sch)
+
+    Description: (None)
+
+    Form: Enrolment Form (2025-2026)
+
+20. Submit Enrolment Form (2024-2025)
+
+    Item Name: Submit Enrolment Form (2024-2025)
+
+    Item Type: Form
+
+    Statuses: All, Pending, Admitted, Place offered, Enrolled
+
+    Conditions:
+
+        (Dependency: Completed Receive Decision... AND Enrollment Year Equals 2024-2025 Academic Year) OR
+
+        (HS Students 20... Equals Yes)
+
+    Description: This is an <b>agreement</b> between the family and the school. Please, ensure that all fields are filled out correctly. If you need assistance, please contact the Admissions Manager: <a href="mailto:admission@isl.cy">admission@isl.cy</a>
+
+    Form: Enrolment Form (2024-2025)
+
+21. Receive Decision from Admission Team
+
+    Item Name: Receive Decision from Admission Team
+
+    Item Type: To Do
+
+    Statuses: Pending, Admitted, Place offered
+
+    Conditions:
+
+        (Dependency: Completed Submit Form for... [likely Registration of Interest])
+
+    Description: Please wait for an email from the Admission Team with the results of the tests and/or interviews child took.
+
+    Other: Allow parents to mark as completed is not checked.
+
+22. Book Interview with IB Representative
+
+    Item Name: Book Interview with IB Representative
+
+    Item Type: To Do
+
+    Statuses: Pending, Admitted, Place offered
+
+    Conditions:
+
+        (Dependency: Completed Submit Form for...) AND (IB Programme ... Equals Yes) AND (Enrollment Year Equals 2024-2025 Academic Year)
+
+    Description: Please <a href="https://theislandprivateschool.simplybook.it/v2/#book/service/28" target="_blank" rel="noreferrer noopener">schedule an interview</a> with IB Representative. <b>Please note: the interview date should be AFTER the aptitude/English tests.</b> Once finished, mark this point as completed.
+
+    Other: Allow parents to mark as completed is checked.
+
+23. Book Time Slot for Aptitude and English Tests (IB)
+
+    Item Name: Book Time Slot for Aptitude and English Tests (IB)
+
+    Item Type: To Do
+
+    Statuses: Pending, Admitted, Place offered
+
+    Conditions:
+
+        (Dependency: Completed Submit Form for...) AND (IB Programme ... Equals Yes) AND (IB Tracks Does not equal IB: Technology Leaders Sch)
+
+    Description: Please <a href="https://theislandprivateschool.simplybook.it/v2/#book/service/19/count/1/" target="_blank" rel="noreferrer noopener">book a time slot</a> for Aptitude and English tests. Once finished, please click a button with a tick on the right side of the checklist item to mark this item as completed.
+
+    Other: Allow parents to mark as completed is checked.
+
+24. Submit Form for Learning Support (IB)
+
+    Item Name: Submit Form for Learning Support (IB)
+
+    Item Type: Form
+
+    Statuses: Pending, Admitted, Place offered
+
+    Conditions:
+
+        (IB Programme ... Equals Yes) AND (IB Tracks Does not equal IB: Technology Leaders Sch) AND (REE 2025-2026 Does not equal Yes)
+
+    Description: (None)
+
+    Form: Learning Support form (IB / Montessori)
+
+25. Book School Tour (Optional)
+
+    Item Name: Book School Tour (Optional)
+
+    Item Type: To Do
+
+    Optional: Yes
+
+    Statuses: Pending, Admitted, Place offered
+
+    Conditions:
+
+        (IB Tracks Does not equal IB: Technology Leaders Sch) AND (IB Tracks Does not equal IB: Entrepreneurship & Technology) AND (HS Students 20... Does not equal Yes) AND (REE 2025-2026 Does not equal Yes)
+
+    Description: You can book a school tour <a href="https://calendly.com/islandprivateschool/school-tour" target="_blank" rel="noreferrer noopener">here</a>. Tour Visit is optional.
+
+    Other: Allow parents to mark as completed is checked.

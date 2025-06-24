@@ -1,0 +1,135 @@
+Hey Sonnet! I need to adjust my mermaid chart in this file. This is going to be an OpenApply checklist - you can check online what OpenApply is.
+I need to reorder a couple of items and include a couple more, but first I want to make sure you understand the context. We, as a school (The Island Private School of Limassol) are going to open new IB programmes (additional to our current regular IB), and we need to build a checklist for applicants applying for these two new programmes. The chart is going to become much more complicated, because I need to include more details into it.
+You can understand more context from my (Fazil) message history with E&T and TLF admission manager (Ilya):
+
+"""
+Ilya:
+Hi Fazil
+
+So this is how we imagine the TLF checklist for now:
+
+Mandatory:
+1. Learning support form (Vaccination record, medical record, dietary restrictions, etc. Right now it is in a single form however, it might be better to split it into separate segments.)
+2. Visa documents (We are waiting for the official list from Nicos)
+4. Signed contract with the foundation (No documents required, just a confirmation that the family signed the scholarship agreement)
+5. School contract signed (As you know, the template is being prepared)
+6. A form confirming the student's ability to swim and that the parents allow the student to go into water (We can either upload a written form for them to print or sign, or make it online - whatever you think might be better)
+7. A form confirming the ability of the student to partake in sports activities (^same)
+8. A school report from their last school, which will demonstrate the marks for the past two years of schooling (with English translation if in any other language)
+9. Photo of the student's passport
+10. Photo of the parents' passports (just one parent is enough)
+11. Parent consent form (that the parents allow us to take care of the students and act if necessary)
+12. Boarding code of conduct (the rules of the boarding house will be available later whenever the head of boarding joins)
+
+Optional:
+1. Portfolio
+2. Olympiads, certificates ,etc
+3. Sport preferences
+
+Fazil:
+Hi Ilia!
+
+TL;DR - we need to meet in person to go through this in detail. It may also make sense to give you admin access so you can build or edit the checklist directly instead of relaying changes through us.
+
+____
+
+Mandatory:
+
+1. Please specify how you'd like the Learning Support form to be segmented. If we split it, we need a breakdown of which questions go into each form.
+2. Will visa documents be collected under a single checklist item, or do you expect to split them by document type (e.g. student visa application, sponsor letter, health insurance)? Confirm expected list once Nicos provides it.
+5. The school contract is our Enrollment Form, submitted via OpenApply and signed later in DocuSign. Current workflow:
+- Student starts with status "Pending"
+- Checklist shows item "Submit Enrollment Form"
+- Once filled, status automatically updates to "Admitted"
+- We export and upload the form as PDF to DocuSign for signature
+- A parent manually ticks an additional checklist item "E-Sign Your Enrolment Form"
+This form cannot be split or duplicated. To avoid redundancy, we need a list of what contract-specific content is not already covered in the Enrollment Form, so we can exclude overlap from TLF supplementary forms.
+6. Please provide the exact text and required fields for the swimming consent form (e.g. "My child is able to swim unassisted 25m" + checkbox + signature). We can either create an OpenApply form for digital signature or upload a printable form for manual upload.
+Same applies to point 7.
+7. Please provide wording for the sports participation form. If sport preferences are tied to this, we can merge it into one form.
+8. School report: Do you prefer to collect it inside the Learning Support form (as we do now), or should it be a separate checklist item once the form is split?
+9. Should we accept ID cards as substitutes for parent/student passports? Current logic:
+- Non-Cypriot citizens - Passport only
+- Cypriot citizens - Passport or ID card
+- Residence permit - Not accepted
+11. Please provide the template (text + questions/fields) for the general parental consent form ("we authorize the school to act on our behalf in case of emergency..."). Specify whether both parents must sign.
+12. Boarding code of conduct – will this be just an informational upload, or a form requiring signature?
+
+_____
+
+Optional:
+
+3. If "Sport Preferences" is a dropdown (e.g. Football, Basketball, None), should we merge it into the Sports Consent Form to avoid form fatigue?
+
+_____
+
+To ensure that supplementary form signatures collected through OpenApply remain legally valid under Cyprus law, we added the following clauses into our Enrollment Form:
+
+Consent for Periodic Form Signatures
+I/we, the Parents / Guardians of The Applicant, understand and accept that from time to time the School may ask me/us to sign various forms or other documents that are required for the educational process of my/our child (e.g., field trip authorisation form, iPad lease agreement, etc.). These forms will be sent by the School within the OpenApply platform and will need to be signed using OpenApply e-signature.
+I/we confirm my/our given consent to the above.
+
+Consent for E-Signature by Designated Parent/Guardian
+I/we provide our consent that such forms will be signed by one of us (hereinafter – the Designated Parent / Guardian) (i.e., I/we consent that signatures of all parents/guardians are not required) and request the School to send the requests to fill forms for e-signature at the email addresses we used to register our child in the OpenApply system of The Island Private School.
+I/we confirm my/our given consent to the above.
+
+Consent for OpenApply Account Security and Responsibility
+I/we undertake the obligation to keep my/our individual OpenApply username(s) and password(s) confidential and not disclose them to anyone. I/we take full responsibility if anyone obtains my/our OpenApply username(s) and password(s) and performs any actions (including e-signature of forms and other documents) on my/our behalf.
+I/we confirm my/our given consent to the above
+
+You may want to include these or similar clauses in the TLF contract to ensure continued validity of digital signatures via OpenApply.
+
+"""
+
+The problem is that most of the documents are not determined yet. We had a meeting today, and I made some notes:
+
+"""
+OpenApply TLF
+
+Learning support form split → I create a dummy form with ALL the fields available. 
+
+Possible options:
+
+TLF (Technology Leaders of the Future, scholarship programme) with boarding
+
+TLF without boarding
+
+E&T (Entrepreneurship & Technology, same as TLF, but paid) with boarding
+
+E&T without boarding
+
+For day school only (without boarding): basic questions in Learning Support form: allergies, sports, etc
+
+For boarding (students will live in a supervised hotel with curator): extended Learning Support form - additional medical info
+
+medical (additional part is a cheatsheet)
+
+Ask ANNA about Learning support / medical documents:
+Health & Contract timeline
+
+Visa documents (waiting from Nicos until June 21st):
+
+All visa documents will be the first checklist items in the checklist
+
+dependency on Nationality field: if Cyprus / EU → no Visa required
+
+For Visa documents collection:
+
+single checklist item with multiple fields
+
+Additional option for assigning individual tasks for parents in a student’s profile to ensure flexibility 
+
++справка о несудимости (для визы)
+
+consent-form will be after 21 june
+
+head of boarding takes over on july 1st
+
+Grades 9, 10, 11 (4-y, 3-y, 2-y programmes) → DP (math, physics, IT → high-level mandatory)
+
+21 June - meeting with parents and students - deadline
+"""
+
+Please build a memory bank
+
+VAN
